@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Survey</title>
+    <link href="assert/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="assert/css/comm.css" type="text/css" rel="stylesheet">
+    <link href="assert/css/survey.css" type="text/css" rel="stylesheet"/>
+    <script src="assert/js/jquery-1.9.1.min.js"></script>
+    <script src="assert/js/survey.js"></script>
+</head>
+<body>
+<div id="container">
+    <div class="container">
+        <form class="survey-form">
+            <div class="row header">
+                <div class="col-md-6 col-lg-6">
+                    <div class="logo-wrapper">
+                        <img src="assert/img/logo.png" class="logo-pic"/>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="header-desc">Online Assesment</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-lg-9">
+                    <div class="survey-head-desc">PROJECT:  <span class="survey-head-desc-bold">HKT 2017 Project A</span> &nbsp;&nbsp;//&nbsp;&nbsp;ASSESTMENT VERSION <span class="survey-head-desc-bold">V2R12</span>&nbsp;&nbsp;//&nbsp;&nbsp;CATEGORY <span class="survey-head-desc-bold">Optimal Customer Experience</span></div>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <div class="share">
+                        <a class="share-a icon-1" href="#" id="home" title="Home"></a>
+                        <a class="share-a icon-2" href="#" id="save" title="Save"></a>
+                        <a class="share-a icon-3" href="#" id="reset" title="Reset" onclick="showConfirmResetDialog();"></a>
+                        <a class="share-a icon-4" href="#" id="logout" title="Log out"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-lg-9">
+                    <div class="survey-intro">
+                        How to do the assessment ...Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperi am eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt, explicabo. Omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperi am eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo inventore veritatis et quasi architecto beatae vitae.
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <div class="survey-step-intro">
+                        See the step-by-step<br>
+                        guide on using this survey
+                        <img src="assert/img/play-btn-icon.png" class="survey-play-btn"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--foreach item start-->
+            <div class="row survey-item">
+                <div class="col-md-12 col-lg-12">
+                    <div class="survey-item-title">1. Value Measurement</div>
+                    <img src="assert/img/explain_icon.png" class="explain_pic" onclick="showDialog();">
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="survey-item-desc-blod">
+                        Do you assess the value which your analytics deliver to the enterprise? How do you assign causality between analytic modelling and actual business results?
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2"><span class="input-desc">Score</span></div>
+                        <div class="col-md-4 col-lg-4">
+                            <input type="text" value="9.9" class="score"  onkeyup="checkNum(this);"/>
+                        </div>
+                        <div class="col-md-2 col-lg-2"><span class="input-desc">Certainty</span></div>
+                        <div class="col-md-4 col-lg-4">
+                            <input type="text" value="9.9" class="certainty" onkeyup="checkNum(this);"/>
+                        </div>
+                        <div class="col-md-10 col-xs-10 col-md-push-2 col-lg-push-2">
+                            <span class="error-msg">*Put in one number after decimal point ex.X.X</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 second-column">
+                    <div class="survey-item-desc-title">Best</div>
+                    <div class="survey-item-desc">
+                        Each analytics initiative is measured against formal ROI criteria. Total investment, ongoing costs, and headcount are mapped against an absolute return-on-investment figure that has
+                        been determined through causal means. Business results are predicted, scientifically isolated, and tested for significance with respect to predicted uncertainty.
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="survey-item-desc-title">Worst</div>
+                    <div class="survey-item-desc">
+                        Value to the enterprise is not measured, or is loosely associated as post hocergo propter hoc.  We don’t know the financial impact of our analytics; we do
+                        analytics because everyone else does. Business results are compared to model predictions withnothing more than "rearview mirror" analytics.
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <textarea class="comment" placeholder="Post your comment"></textarea>
+                </div>
+            </div>
+
+            <div class="row survey-item">
+                <div class="col-md-12 col-lg-12">
+                    <div class="survey-item-title">2. Scalability</div>
+                    <img src="assert/img/explain_icon.png" class="explain_pic" onclick="showDialog();">
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="survey-item-desc-blod">
+                        Do you assess the value which your analytics deliver to the enterprise? How do you assign causality between analytic modelling and actual business results?
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2"><span class="input-desc">Score</span></div>
+                        <div class="col-md-4 col-lg-4">
+                            <input type="text" value="9.9" class="score" onkeyup="checkNum(this);"/>
+                        </div>
+                        <div class="col-md-2 col-lg-2"><span class="input-desc">Certainty</span></div>
+                        <div class="col-md-4 col-lg-4">
+                            <input type="text" value="9.9" class="certainty" onkeyup="checkNum(this);"/>
+                        </div>
+                        <div class="col-md-10 col-xs-10 col-md-push-2 col-lg-push-2">
+                            <span class="error-msg">*Put in one number after decimal point ex.X.X</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 second-column">
+                    <div class="survey-item-desc-title">Best</div>
+                    <div class="survey-item-desc">
+                        Each analytics initiative is measured against formal ROI criteria. Total investment, ongoing costs, and headcount are mapped against an absolute return-on-investment figure that has
+                        been determined through causal means. Business results are predicted, scientifically isolated, and tested for significance with respect to predicted uncertainty.
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="survey-item-desc-title">Worst</div>
+                    <div class="survey-item-desc">
+                        Value to the enterprise is not measured, or is loosely associated as post hocergo propter hoc.  We don’t know the financial impact of our analytics; we do
+                        analytics because everyone else does. Business results are compared to model predictions withnothing more than "rearview mirror" analytics.
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <textarea class="comment" placeholder="Post your comment"></textarea>
+                </div>
+            </div>
+            <!--foreach item end-->
+
+            <!--thanks module start-->
+            <div class="row thanks">
+                <div class="col-md-12 col-lg-12">
+                    <h1 class="h1-title orange-color">Thank You</h1>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="thanks-desc">We’d like your input! By providing feedback, you are helping improve ODMM.</div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                      <div class="textarea-group">
+                          <textarea class="thanks-comment" placeholder="Post your comment" rows="5"></textarea>
+                      </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="btn-group">
+                        <input type="submit" class="btn-submit" value="SUBMIT">
+                    </div>
+                </div>
+            </div>
+            <!--thanks module end-->
+        </form>
+    </div>
+
+
+    <!--bottom line & copyright module-->
+    <div class="bottom">
+        <img src="assert/img/bottom-line.png" class="bottom-line"/>
+        <div class="bottom-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="copyright">2017 &copy; Open ROADS Community. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bottom line & copyright module-->
+</div>
+
+    <!--dialog start-->
+    <div class="dialog">
+        <div class="dialog-bg"></div>
+        <div class="dialog-content">
+            <img src="assert/img/close_icon.png" class="close-dialog" onclick="hideDialog();"/>
+            <div class="dialog-title">Value Measurement References:</div>
+            <table class="dialog-tb">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Source Link</th>
+                        <th>Company</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Adoption Reference </td>
+                        <td><a href="#" class="source-link" target="_blank">Steps to improve value</a></td>
+                        <td>Cisco</td>
+                    </tr>
+                    <tr>
+                        <td>Adoption Reference </td>
+                        <td><a href="#" class="source-link" target="_blank">Analytics</a></td>
+                        <td>Cisco</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--dialog end-->
+
+    <!--confirm reset dialog start-->
+    <div class="resetDialog">
+        <div class="dialog-bg"></div>
+        <div class="resetDialog-content">
+            <img src="assert/img/close_icon.png" class="close-dialog" onclick="hideConfirmResetDialog();"/>
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="reset-desc">All data you have answered will be erased.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="confirm-reset-desc">Are you sure you want to start over?</div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <a class="btn-yes" href="javascript:void(0);" onclick="confirmResetClearData();">YES</a>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <a class="btn-no" href="javascript:void(0);" onclick="hideNoConfirmReset();">NO</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--confirm reset dialog end-->
+</body>
+</html>

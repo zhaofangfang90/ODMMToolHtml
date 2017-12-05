@@ -1,0 +1,390 @@
+.h1-title{
+    margin: 10px 0 30px 0;
+}
+.report-head-desc{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 14px;
+    font-family: "FrutigerNextLT-Light";
+    margin-top: 10px;
+}
+.report-head-desc-bold{
+    font-weight: bold;
+    color:#000;
+}
+.share{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+.share-a{
+    position: relative;
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    background: url("../img/survey_iocn.png") no-repeat 0 0;
+    margin: 0 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.icon-1{
+    background-position: 0 0;
+}
+.icon-1:hover{
+    background-position: 0 -40px;
+}
+.icon-2{
+    background-position: -36px 0;
+}
+.icon-2:hover{
+    background-position: -36px -40px;
+}
+.icon-3{
+    background-position: -74px 0;
+}
+.icon-3:hover{
+    background-position: -74px -40px;
+}
+.icon-4{
+    background-position: -110px 0;
+}
+.icon-4:hover{
+    background-position: -110px -40px;
+}
+.report-small-title{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size:30px;
+    color:#333333;
+    font-family:"FrutigerNextLT-Bold";
+    margin-bottom: 20px;
+}
+.report-desc-bold{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-family:"FrutigerNextLT-Bold";
+    line-height: 20px;
+    color:#333333;
+    margin-bottom: 20px;
+}
+.report-desc{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    line-height: 20px;
+    color:#333333;
+    font-size:15px;
+    margin-bottom: 20px;
+}
+.classify-row{
+    position:relative;
+    margin: 20px 0;
+}
+.classify_pic{
+    position: relative;
+    width: 105px;
+    height: auto;
+    display: block;
+}
+.classify{
+    position: relative;
+    height: auto;
+    display: block;
+    font-size:14px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+.classify:before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-color: #999;
+    border-radius: 50%;
+    left:-10px;
+    top:10px;
+}
+.classify:nth-child(1){
+    color:#2297d4;
+}
+.classify:nth-child(2){
+    color:#ebc400;
+}
+.classify:nth-child(3){
+    color:#93c01f;
+}
+.classify:nth-child(4){
+    color:#ee7d00;
+}
+.classify:nth-child(5){
+    color:#12b5b1;
+}
+.classify:nth-child(6){
+    color:#00a95f;
+}
+.classify:nth-child(1):before{
+    background-color: #2297d4;
+}
+.classify:nth-child(2):before{
+    background-color: #ebc400;
+}
+.classify:nth-child(3):before{
+    background-color: #93c01f;
+}
+.classify:nth-child(4):before{
+    background-color: #ee7d00;
+}
+.classify:nth-child(5):before{
+    background-color: #12b5b1;
+}
+.classify:nth-child(6):before{
+    background-color: #00a95f;
+}
+.report-big-graph{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.report-big-graph-pic{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.score-conn{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 60px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.level-name{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-family: "FrutigerNextLT-Bold";
+    font-size:24px;
+    color:#93c01f;
+}
+.level-name-desc{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-family: "FrutigerNextLT-Bold";
+    font-size:16px;
+    color:#333333;
+    margin-bottom: 30px;
+}
+.level-intro{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-family: "FrutigerNextLT-Bold";
+    font-size:16px;
+    color:#93c01f;
+}
+.level-intro-desc{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size:14px;
+    color:#333333;
+    margin-bottom: 30px;
+    font-family: "FrutigerNextLT-Bold";
+    line-height: 20px;
+}
+.treemap{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+.treemap-title{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size:24px;
+    color:#333333;
+    font-family: "FrutigerNextLT-Bold";
+}
+.treemap-pic{
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px 0 30px 0;
+}
+.treemap-desc{
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/**
+* references css
+ */
+.references{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.references-title{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-family: "FrutigerNextLT-Bold";
+    font-size: 30px;
+    color:#1a97d4;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.references-item{
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.references-item:nth-child(1):hover,.references-curr-item:nth-child(1){
+    color:#2297d4!important;
+}
+.references-item:nth-child(2):hover,.references-curr-item:nth-child(2){
+    color:#ebc400!important;
+}
+.references-item:nth-child(3):hover,.references-curr-item:nth-child(3){
+    color:#93c01f!important;
+}
+.references-item:nth-child(4):hover,.references-curr-item:nth-child(4){
+    color:#ee7d00!important;
+}
+.references-item:nth-child(5):hover,.references-curr-item:nth-child(5){
+    color:#12b5b1!important;
+}
+.references-item:nth-child(6):hover,.references-curr-item:nth-child(6){
+    color:#00a95f!important;
+}
+
+.references-item:after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40%;
+    display: block;
+    right:0;
+    top:30%;
+    background-color: #bfbfbf;
+}
+.references-item:last-child:after{
+    background-color: #fff;
+}
+
+
+.references-conn{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+.references-content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.references-curr-content{
+    display:block;
+}
+table.report-tb{
+    width:100%;
+}
+table.report-tb thead tr,table.report-tb tbody tr{
+    line-height: 36px;
+    color:#000000;
+}
+.references-content:nth-child(1) .td-desc-color{
+    color:#2297d4;
+}
+.references-content:nth-child(2) .td-desc-color{
+    color:#ebc400;
+}
+.references-content:nth-child(3) .td-desc-color{
+    color:#93c01f;
+}
+.references-content:nth-child(4) .td-desc-color{
+    color:#ee7d00;
+}
+.references-content:nth-child(5) .td-desc-color{
+    color:#12b5b1;
+}
+.references-content:nth-child(6) .td-desc-color{
+    color:#00a95f;
+}
+.source-link,.source-link:hover{
+    position: relative;
+    color:#000000!important;
+    text-decoration: underline!important;
+}
+
+
+
+
+/**
+* copyright & line css
+ */
+.bottom{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+}
+.bottom-line{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.bottom-wrapper{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    left:0;
+    bottom:12px;
+    text-align: right;
+}
+.copyright{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 12px;
+    color:#58595b;
+    font-weight:bold;
+}

@@ -1,0 +1,216 @@
+/**
+* comm css
+ */
+@font-face {
+    font-family: "FrutigerNextLT-Bold";
+    src: url("../fonts/FrutigerNextLT-Bold.eot");
+    src: url('../fonts/FrutigerNextLT-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FrutigerNextLT-Bold.otf') format('opentype'),
+    url('../fonts/FrutigerNextLT-Bold.woff') format('woff'),
+    url('../fonts/FrutigerNextLT-Bold.ttf') format('truetype'),
+    url('../fonts/FrutigerNextLT-Bold.svg') format('svg');
+}
+@font-face {
+    font-family: "FrutigerNextLT-Light";
+    src: url("../fonts/FrutigerNextLT-Light.eot");
+    src: url('../fonts/FrutigerNextLT-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FrutigerNextLT-Light.otf') format('opentype'),
+    url('../fonts/FrutigerNextLT-Light.woff') format('woff'),
+    url('../fonts/FrutigerNextLT-Light.ttf') format('truetype'),
+    url('../fonts/FrutigerNextLT-Light.svg') format('svg');
+}
+@font-face {
+    font-family: "FrutigerNextLT-regular";
+    src: url("../fonts/FrutigerNextLT-regular.eot");
+    src: url('../fonts/FrutigerNextLT-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FrutigerNextLT-regular.otf') format('opentype'),
+    url('../fonts/FrutigerNextLT-regular.woff') format('woff'),
+    url('../fonts/FrutigerNextLT-regular.ttf') format('truetype'),
+    url('../fonts/FrutigerNextLT-regular.svg') format('svg');
+}
+body{line-height:160%;}
+*{
+    margin: 0;  padding: 0;  outline:none;  box-sizing: border-box;
+}
+body,html{
+    position:relative;  width:100%;  height: 100%;  display: block;  overflow: auto;  font-family: "FrutigerNextLT-regular";  font-size:16px;color:#595A5C;
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow:auto;
+}
+.container {
+    width: 100% !important;
+    max-width: 1200px;
+}
+.container-fluid{
+    padding:0;
+}
+
+img{
+    border:0;
+}
+a,a:hover,a:visited,a:active{
+    text-decoration: none!important;
+    outline: none!important;
+}
+ul,li{
+    list-style: none;
+}
+
+.orange-color{
+    color:#f38020;
+}
+.blue-color{
+    color:#1A97D4;
+    margin-bottom:30px;
+}
+
+/**
+* welcome & engage header start
+ */
+.header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 30px;
+}
+.logo-wrapper{
+    position: relative;
+    width: 146px;
+    height: auto;
+    display: block;
+}
+.logo-pic{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.header-desc{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: bottom;
+    text-align: right;
+    font-size:28px;
+    padding-top: 20px;
+    color:#58595b;
+    font-style: italic;
+    font-family: "FrutigerNextLT-Light";
+}
+.h1-title{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 100px;
+    margin: 40px 0 15px 0;
+    font-family: "FrutigerNextLT-Light";
+}
+.h1-title1{
+    margin-bottom: 30px;
+}
+
+
+
+/**
+* form css
+ */
+input[type="text"]{
+    width:100%;
+}
+input.score,input.certainty{
+    width:55%;
+    border:2px solid #abacad;
+    padding: 0 5px;
+    box-sizing: border-box;
+    color:#000000;
+    text-align: center;
+}
+input.comment{
+     height: 60px;
+    vertical-align: top;
+    padding:0 10px;
+    margin-top:20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+select {
+    width: 100%;
+    border: 1px solid #c0d7e3;
+    height: 24px;
+    line-height: 24px;
+    background:#e6e6e6 url("../img/select_icon.png") no-repeat 98% center;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    padding-left:10px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+select>option{
+    position: relative;
+    background-color: #e6e6e6;
+    height:30px;
+    line-height: 30px;
+    font-size:14px;
+    color:#6b6c6e;
+    font-family:"FrutigerNextLT-Light";
+}
+select:focus option:checked{
+    color: #1a97d4;
+   /* background-image:linear-gradient(#bdd6e2, #bdd6e2);*/
+    background-color: #bdd6e2!important;
+    font-weight:bold;
+}
+.textarea-group{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.textarea-group:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 96%;
+    display: block;
+    background-color:#abacad;
+    left:-4px;
+    bottom:4px;
+}
+.textarea-group:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color:#abacad;
+    left:-4px;
+    bottom:4px;
+}
+textarea{
+    width:100%;
+    resize:none;
+    border-width:1px 1px 2px 1px;
+    border-style: solid;
+    border-color:#abacad;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+textarea.comment{
+    margin-top: 20px;
+}
+textarea.thanks-comment{
+    position: relative;
+    border:1px solid #abacad;
+}
+
