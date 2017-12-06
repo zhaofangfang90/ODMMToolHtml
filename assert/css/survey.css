@@ -5,7 +5,7 @@
     display: block;
     font-size: 14px;
     font-family: "FrutigerNextLT-Light";
-    margin-top: 10px;
+    margin: 20px 0;
 }
 .survey-head-desc-bold{
     font-weight: bold;
@@ -16,7 +16,7 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 10px;
+   /*  margin-top: 10px; */
     text-align: center;
 }
 .share-a{
