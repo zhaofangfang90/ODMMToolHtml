@@ -51,7 +51,7 @@
     width: 100%;
     height: auto;
     display: block;
-    word-break: break-all;
+    /* word-break: break-all; */
     margin: 10px 0;
     color:#fff;
     font-size: 16px;
