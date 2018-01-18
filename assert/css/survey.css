@@ -53,6 +53,12 @@
 .icon-4:hover{
     background-position: -110px -40px;
 }
+.icon-5{
+    background-position: -182px 0;
+}
+.icon-5:hover{
+     background-position: -182px -40px;
+}
 .survey-intro{
     position: relative;
     width: 85%;
