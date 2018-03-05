@@ -63,78 +63,125 @@
                     <div class="survey-item-title">1. Value Measurement</div>
                     <img src="assert/img/explain_icon.png" class="explain_pic" onclick="showDialog();">
                 </div>
-                <div class="col-md-4 col-lg-4">
+                <div class="col-md-4 col-lg-4 second-column">
                     <div class="survey-item-desc-blod">
                         Do you assess the value which your analytics deliver to the enterprise? How do you assign causality between analytic modelling and actual business results?
                     </div>
-                    <div class="row">
-                        <div class="col-md-2 col-lg-2"><span class="input-desc">Score</span></div>
-                        <div class="col-md-4 col-lg-4">
+
+                    <div class="survey-item-desc-title">Best</div>
+                    <div class="survey-item-desc">
+                        Each analytics initiative is measured against formal ROI criteria. Total investment, ongoing costs, and headcount are mapped against an absolute return-on-investment figure that has
+                        been determined through causal means. Business results are predicted, scientifically isolated, and tested for significance with respect to predicted uncertainty.
+                    </div>
+
+ 					<div class="survey-item-desc-title">Worst</div>
+                    <div class="survey-item-desc">
+                        Value to the enterprise is not measured, or is loosely associated as post hocergo propter hoc.  We don’t know the financial impact of our analytics; we do
+                        analytics because everyone else does. Business results are compared to model predictions withnothing more than "rearview mirror" analytics.
+                    </div>                
+                </div>
+                <div class="col-md-8 col-lg-8">
+
+						<ul class="answer_list">
+                            <li class="answer_item">
+                                <div class="answer_item_left">
+                                    <img src="assert/img/explain_icon.png" class="answer_pic" onclick="showDialog();">
+                                    <div class="answer_item_desc">Our organization has a set of digital vision objectives, hence most people have different interpretion of the strategy across the organization.</div>
+                                </div>
+                                <div class="answer_item_right">
+                                    <div class="select">
+                                        <div class="arrow_icon"></div>
+                                        <input type="hidden" class="input_hide" value=""/>
+                                        <ul class="select_list">
+                                            <li class="select_item"><span class="select_icon"></span>Yes</li>
+                                            <li class="select_item"><span class="select_icon"></span>No</li>
+                                            <li class="select_item"><span class="select_icon"></span>Others</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>  
+                             <li class="answer_item">
+                                 <div class="answer_item_left">
+                                     <img src="assert/img/explain_icon.png" class="answer_pic" onclick="showDialog();">
+                                     <div class="answer_item_desc">Digital visition is reflected on the organization's mission statement.</div>
+                                 </div>
+                                 <div class="answer_item_right">
+                                     <div class="select">
+                                         <div class="arrow_icon"></div>
+                                         <input type="hidden" class="input_hide" value=""/>
+                                         <ul class="select_list">
+                                             <li class="select_item"><span class="select_icon"></span>Yes</li>
+                                             <li class="select_item"><span class="select_icon"></span>No</li>
+                                             <li class="select_item"><span class="select_icon"></span>Others</li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                            </li>  
+                             <li class="answer_item">
+                                <div class="answer_item_left">
+                                    <img src="assert/img/explain_icon.png" class="answer_pic" onclick="showDialog();">
+                                    <div class="answer_item_desc">Have an assigned leader from C-Suite responsible for executing digital vision / strategy.</div>
+                                </div>
+                                 <div class="answer_item_right">
+                                     <div class="select">
+                                         <div class="arrow_icon"></div>
+                                         <input type="hidden" class="input_hide" value=""/>
+                                         <ul class="select_list">
+                                             <li class="select_item"><span class="select_icon"></span>Yes</li>
+                                             <li class="select_item"><span class="select_icon"></span>No</li>
+                                             <li class="select_item"><span class="select_icon"></span>Others</li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                            </li>  
+                             <li class="answer_item">
+                                <div class="answer_item_left">
+                                    <img src="assert/img/explain_icon.png" class="answer_pic" onclick="showDialog();">
+                                    <div class="answer_item_desc">So far the most effective way out organizations communicating digital vision through sending out emails to all employees.</div>
+                                </div>
+                                 <div class="answer_item_right">
+                                     <div class="select">
+                                         <div class="arrow_icon"></div>
+                                         <input type="hidden" class="input_hide" value=""/>
+                                         <ul class="select_list">
+                                             <li class="select_item"><span class="select_icon"></span>Yes</li>
+                                             <li class="select_item"><span class="select_icon"></span>No</li>
+                                             <li class="select_item"><span class="select_icon"></span>Others</li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                            </li>  
+                             <li class="answer_item">
+                                <div class="answer_item_left">
+                                    <img src="assert/img/explain_icon.png" class="answer_pic" onclick="showDialog();">
+                                    <div class="answer_item_desc">Digital vision and strategy is clearly defined and all stakeholders are able to accurately explain it.</div>
+                                </div>
+                                 <div class="answer_item_right">
+                                     <div class="select">
+                                         <div class="arrow_icon"></div>
+                                         <input type="hidden" class="input_hide" value=""/>
+                                         <ul class="select_list">
+                                             <li class="select_item"><span class="select_icon"></span>Yes</li>
+                                             <li class="select_item"><span class="select_icon"></span>No</li>
+                                             <li class="select_item"><span class="select_icon"></span>Others</li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                            </li>                  
+                        </ul>
+
+                      <div class="row score_div">
+                        <div class="col-md-1 col-lg-1"><span class="input-desc">Score</span></div>
+                        <div class="col-md-2 col-lg-2">
                             <input type="text" value="9.9" class="score"  onkeyup="checkNum(this);"/>
                         </div>
-                        <div class="col-md-2 col-lg-2"><span class="input-desc">Certainty</span></div>
-                        <div class="col-md-4 col-lg-4">
+                        <div class="col-md-1 col-lg-1"><span class="input-desc">Certainty</span></div>
+                        <div class="col-md-2 col-lg-2">
                             <input type="text" value="9.9" class="certainty" onkeyup="checkNum(this);"/>
                         </div>
-                        <div class="col-md-10 col-xs-10 col-md-push-2 col-lg-push-2">
+                        <div class="col-md-10 col-xs-10">
                             <span class="error-msg">*Put in one number after decimal point ex.X.X</span>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 second-column">
-                    <div class="survey-item-desc-title">Best</div>
-                    <div class="survey-item-desc">
-                        Each analytics initiative is measured against formal ROI criteria. Total investment, ongoing costs, and headcount are mapped against an absolute return-on-investment figure that has
-                        been determined through causal means. Business results are predicted, scientifically isolated, and tested for significance with respect to predicted uncertainty.
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="survey-item-desc-title">Worst</div>
-                    <div class="survey-item-desc">
-                        Value to the enterprise is not measured, or is loosely associated as post hocergo propter hoc.  We don’t know the financial impact of our analytics; we do
-                        analytics because everyone else does. Business results are compared to model predictions withnothing more than "rearview mirror" analytics.
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                    <textarea class="comment" placeholder="Post your comment"></textarea>
-                </div>
-            </div>
-
-            <div class="row survey-item">
-                <div class="col-md-12 col-lg-12">
-                    <div class="survey-item-title">2. Scalability</div>
-                    <img src="assert/img/explain_icon.png" class="explain_pic" onclick="showDialog();">
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="survey-item-desc-blod">
-                        Do you assess the value which your analytics deliver to the enterprise? How do you assign causality between analytic modelling and actual business results?
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-lg-2"><span class="input-desc">Score</span></div>
-                        <div class="col-md-4 col-lg-4">
-                            <input type="text" value="9.9" class="score" onkeyup="checkNum(this);"/>
-                        </div>
-                        <div class="col-md-2 col-lg-2"><span class="input-desc">Certainty</span></div>
-                        <div class="col-md-4 col-lg-4">
-                            <input type="text" value="9.9" class="certainty" onkeyup="checkNum(this);"/>
-                        </div>
-                        <div class="col-md-10 col-xs-10 col-md-push-2 col-lg-push-2">
-                            <span class="error-msg">*Put in one number after decimal point ex.X.X</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 second-column">
-                    <div class="survey-item-desc-title">Best</div>
-                    <div class="survey-item-desc">
-                        Each analytics initiative is measured against formal ROI criteria. Total investment, ongoing costs, and headcount are mapped against an absolute return-on-investment figure that has
-                        been determined through causal means. Business results are predicted, scientifically isolated, and tested for significance with respect to predicted uncertainty.
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="survey-item-desc-title">Worst</div>
-                    <div class="survey-item-desc">
-                        Value to the enterprise is not measured, or is loosely associated as post hocergo propter hoc.  We don’t know the financial impact of our analytics; we do
-                        analytics because everyone else does. Business results are compared to model predictions withnothing more than "rearview mirror" analytics.
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-12">

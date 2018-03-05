@@ -5,6 +5,9 @@ function showDialog(){
     $(document).on("click",".survey-item .explain_pic",function(){
         $(".dialog").fadeIn();
     });
+    $(document).on("click",".survey-item .answer_pic",function(){
+        $(".dialog").fadeIn();
+    });
 }
 
 /**
@@ -12,6 +15,9 @@ function showDialog(){
 */
 function hideDialog(){
     $(document).on("click",".dialog .close-dialog",function(){
+        $(".dialog").fadeOut();
+    });
+    $(document).on("click",".survey-item .answer_pic",function(){
         $(".dialog").fadeOut();
     });
 }
@@ -80,3 +86,38 @@ function checkNum(o){
         }
     }
 }
+
+
+/**
+* 0305 answer_list module js
+ */
+
+$(function(){
+   $(".select").mouseenter(function(){
+       $(this).find(".arrow_icon").addClass("arrow_icon_hover");//change arrow icon
+       $(this).find(".select_list").addClass("show").removeClass("hide");//show select list
+       $(this).find(".hide").removeClass("hide");
+       $(this).parents(".answer_item").css("z-index",1);
+   }) ;
+
+   $(".select").mouseleave(function(){
+       //debugger;
+       $(this).parents(".answer_item").css("z-index",0);
+       $(this).find(".arrow_icon").removeClass("arrow_icon_hover");
+       $(this).find(".select_list").addClass("hide").removeClass("show");
+       $(this).find(".select_item").not(".show").addClass("hide");
+   });
+});
+
+$(function(){
+    $(".select_item").click(function(){
+        $(this).find(".select_icon").addClass("select_icon_check");
+        $(this).siblings().find(".select_icon").removeClass("select_icon_check");//change circle icon
+        $(this).addClass("show-1").removeClass("hide");
+        $(this).siblings(".select_item").addClass("hide").removeClass("show-1");
+        $(this).parents(".select_list").addClass("show-1");
+        $(this).parents(".select_list").prev(".input_hide").val($(this).text());//
+    })
+});
+
+
